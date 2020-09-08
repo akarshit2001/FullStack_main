@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Practical12</title>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+    />
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        body{
+            min-width: 100%;
+
+            background: antiquewhite;
+        }
+        .wrapper{
+            width: 700px;
+            background: wheat;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        .content-table{
+            width: 100%;
+
+            padding: 10px;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        .Star{
+            background: burlywood;
+
+        }
+        .diamond{
+            background: darkgray;
+
+        }
+        .car{
+            background: goldenrod;
+
+        }
+        .Plane{
+            background: darkseagreen;
+
+        }
+        .content-table td,.content-table th{
+            border-right: 5px solid wheat;
+            border-left: 5px solid wheat;
+            width: 250px;
+            margin: 8px 5px;
+            text-align: center ;
+            padding: 10px;
+        }
+        .content-table th{
+            height: 70px;
+            color: wheat;
+            font-size: 20px;
+        }
+        .content-table th  i{
+            font-size: 28px;
+            margin-right: 10px;
+            text-align: center;
+        }
+        tbody tr:nth-child(odd){
+            background: wheat;
+        }
+        tfoot tr{
+            background: yellow;
+        }
+        tfoot tr td a{
+            text-align: center;
+            text-decoration: none;
+            color: aliceblue;
+            padding: 10px;
+            background: coral;
+            border-radius: 10px;
+        }
+        tfoot tr td a:hover{
+            background: darkmagenta;
+            transition:2s;
+        }
+        @media (max-width:768px) {
+            .content-table {
+                padding: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <h1 style="text-align: center;margin-bottom: 10px;color: crimson"> Select your plan and enjoy!</h1>
+
+<table class="content-table">
+    <colgroup class="Star"></colgroup>
+    <colgroup class="diamond"></colgroup>
+    <colgroup class="car"></colgroup>
+    <colgroup class="Plane"></colgroup>
+    <thead>
+
+    <tr>
+        <th><i class="fa fa-star"  style="margin-right: 10px">Star</i></th>
+        <th><i class="fa fa-diamond" >diamond</i></th>
+        <th><i class="fa fa-car" >Car</i></th>
+        <th><i class="fa fa-plane" >Plane</i></th>
+    </tr>
+
+    </thead>
+    <tbody>
+    <tr>
+        <td>Rs 500</td>
+        <td>Rs 1500</td>
+        <td>Rs 2000</td>
+        <td>Rs 3000</td>
+    </tr>
+    <tr>
+        <td>50 Pages</td>
+        <td>100 Pages</td>
+        <td>Unlimited</td>
+        <td> Unlimited</td>
+    </tr>
+    <tr>
+        <td>10 user</td>
+        <td>20 user</td>
+        <td>30 user</td>
+        <td>unlimited</td>
+    </tr>
+    <tr>
+        <td>10 sites</td>
+        <td>20 sites</td>
+        <td>50 sites</td>
+        <td>unlimited</td>
+    </tr>
+    <tr>
+        <td>50 MB</td>
+        <td>200 MB</td>
+        <td>1 GB</td>
+        <td>5 GB</td>
+    </tr>
+    <tr>
+        <td>included</td>
+        <td>included</td>
+        <td>included</td>
+        <td>included</td>
+    </tr>
+    <tr>
+        <td>
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </td>
+        <td>
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </td>
+        <td>
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </td>
+        <td>
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="fa fa-times"></i>
+        </td>
+        <td>
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </td>
+        <td>
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </td>
+        <td>
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="fa fa-times"></i>
+        </td>
+        <td>
+            <i class="fa fa-times"></i>
+        </td>
+        <td>
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </td>
+        <td>
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="fa fa-times"></i>
+        </td>
+        <td>
+            <i class="fa fa-times"></i>
+        </td>
+        <td>
+            <i class="fa fa-times"></i>
+        </td>
+        <td>
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </td>
+    </tr>
+
+    </tbody>
+    <tfoot>
+    <tr>
+        <td>
+            <a href="#">Signup</a>
+        </td>
+        <td>
+            <a href="#">Signup</a>
+        </td>
+        <td>
+            <a href="#">Signup</a>
+        </td>
+        <td>
+            <a href="#">Signup</a>
+        </td>
+    </tr>
+
+    </tfoot>
+</table>
+    </div>
+
+
+</body>
+</html>
