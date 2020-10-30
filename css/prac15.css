@@ -19,14 +19,21 @@ display: flex;
     font-size: 50px;
     color: blueviolet;
     background-color: burlywood;
+    border-radius:20px;
 }
-button{
-    font-size: 60px;
-    width: 30%;
+h1{
+   font-size: 50px;
     color: blueviolet;
-    background-color: burlywood;
+
 
 }
+#main{
+    text-align: center;
+    font-size: 50px;
+    color: red;
+
+}
+
 p{
 text-align: center;
     color: greenyellow;
