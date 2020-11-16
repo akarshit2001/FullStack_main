@@ -119,7 +119,7 @@ else if(hours>12 && hours<17){
   
   }
 
-  else if(hours>=20&& hours<=0){
+  else {
    const greting= "Good Night Dear!";
     document.body.style.backgroundImage='url("../images/moon-night-mountains-nature-wallpaper-preview.jpg")';
     document.body.style.backgroundPosition='center'
