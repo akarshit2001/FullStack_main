@@ -61,7 +61,7 @@ function writeText(){
 let time= new Date()
 let hours= time.getHours();
 
-if(hours<12 && hours<6){
+if(hours<12 && hours>6){
  const greeting= "Good morning Dear!";
     document.body.style.backgroundImage='url("../images/morn.jpg")';
     document.body.style.backgroundPosition='center'
