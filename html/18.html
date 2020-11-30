@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/18.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+ 
+
+</head>
+<body>
+    <div class="container" >
+        <h1 style="text-align: center;background-color: aqua;">Create Account</h1>
+  
+<form  onsubmit="return validate()">
+    
+    <div class="form-container">
+<label for="name">Username</label>
+
+<input type="text" id="name" placeholder="username">
+        <i id='name-fails' class="fa fa-exclamation-triangle" style="color:red"></i>
+        <i id='name-check' class="fa fa-check-circle" style="color:green"></i>
+<small id="uname"></small>
+</div>
+<div class="form-container">
+<label for="useremail">email</label>
+<input type="email" id="useremail" placeholder="Email" >
+    <i id='email-fails' class="fa fa-exclamation-triangle" style="color:red"></i>
+    <i id='email-check' class="fa fa-check-circle" style="color:green"></i>
+<small id="uemail">Error </small>
+</div>
+<div class="form-container">
+<label for="pass">Password</label>
+<input type="password" id="pass" placeholder="Password">
+    <i id='pass-fails' class="fa fa-exclamation-triangle" style="color:red"></i>
+    <i id='pass-check' class="fa fa-check-circle" style="color:green"></i>
+<small id="uerror"> </small>
+</div>
+
+<div class="form-container">
+<label for="confpass">ConfirmPass</label>
+<input type="password" id="confpass" placeholder="ConfirmPassword">
+    <i id='conf-fails' class="fa fa-exclamation-triangle" style="color:red"></i>
+    <i id='conf-check' class="fa fa-check-circle" style="color:green"></i>
+<small id="ucerror"> </small>
+</div>
+
+<button type="submit">Submit</button>
+
+
+</form>
+
+
+
+
+    </div>
+
+    <script src="../js/18.js"></script>
+
+</body>
+</html>
